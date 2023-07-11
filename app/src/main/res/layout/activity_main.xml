@@ -12,7 +12,13 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_percent=".60"
     />
-
+<androidx.constraintlayout.widget.Guideline
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/guide_h_40"
+    app:layout_constraintGuide_percent=".35"
+    />
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -25,7 +31,15 @@
     android:text="0"
     android:padding="12sp"
     />
-
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnMulti"
+app:layout_constraintBottom_toTopOf="@+id/guide_h_40"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:text="@string/Multichoice"
+    />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,5 +49,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvMulti"
+    app:layout_constraintBottom_toTopOf="@+id/btnMulti"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:text=" Selected Name"
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

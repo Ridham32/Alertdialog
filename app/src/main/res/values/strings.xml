@@ -2,4 +2,5 @@
     <string name="app_name">Alertdialog</string>
     <string name="alert">ALERT\n</string>
     <string name="name">NAME FROM LIST</string>
+    <string name="Multichoice">MULTICHOICE BUTTON</string>
 </resources>
